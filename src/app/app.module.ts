@@ -8,6 +8,7 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { DocsComponent } from './components/docs/docs.component';
+import { DocsGuideComponent } from './components/docs-guide/docs-home.component';
 import { DocsGuide1Component } from './components/docs-guide/docs-guide1.component';
 import { DocsGuide2Component } from './components/docs-guide/docs-guide2.component';
 
@@ -16,6 +17,7 @@ import { DocsGuide2Component } from './components/docs-guide/docs-guide2.compone
     AppComponent,
     DocsComponent,
     FeaturesComponent,
+    DocsGuideComponent,
     DocsGuide1Component,
     DocsGuide2Component
   ],
@@ -23,7 +25,7 @@ import { DocsGuide2Component } from './components/docs-guide/docs-guide2.compone
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),   
+    MaterialModule.forRoot(),
     routing
   ],
   providers: [],

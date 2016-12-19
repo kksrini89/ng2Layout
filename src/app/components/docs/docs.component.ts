@@ -13,6 +13,14 @@ export class DocsComponent implements OnInit {
     this.guides.push('two');
   }
 
+  toggleGuideFunc() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  toggleTutorialFunc() {
+    document.getElementById("tutorialContent").classList.toggle("show");
+  }
+
   ngOnInit() {
   }
 

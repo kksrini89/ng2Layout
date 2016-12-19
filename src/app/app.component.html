@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <md-toolbar color="primary">
+    <span>Brand Name</span>
+
+    <span class="example-fill-remaining-space">
+      <a class="md-button" [routerLink]="['docs']">Docs</a>
+      <a class="md-button" [routerLink]="['features']">Features</a>
+    </span>
+
+    <span><a class="md-button" [routerLink]="['']">Getting Started</a></span>
+  </md-toolbar>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -7,7 +7,8 @@ import { DocsComponent } from './components/docs/docs.component';
 const APP_ROUTES: Routes = [
     { path: '', component: DocsComponent },
     { path: 'docs', component: DocsComponent, children: Docs_Routes },
-    { path: 'features', component: FeaturesComponent }
+    { path: 'features', component: FeaturesComponent },
+    { path: '**', redirectTo: '' }
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

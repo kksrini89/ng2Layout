@@ -11,6 +11,8 @@ import { DocsComponent } from './components/docs/docs.component';
 import { DocsGuideComponent } from './components/docs-guide/docs-home.component';
 import { DocsGuide1Component } from './components/docs-guide/docs-guide1.component';
 import { DocsGuide2Component } from './components/docs-guide/docs-guide2.component';
+import { DocsTutorial1Component } from './components/docs-tutorial/docs-tutorial1.component';
+import { DocsTutorial2Component } from './components/docs-tutorial/docs-tutorial2.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DocsGuide2Component } from './components/docs-guide/docs-guide2.compone
     FeaturesComponent,
     DocsGuideComponent,
     DocsGuide1Component,
-    DocsGuide2Component
+    DocsGuide2Component,
+    DocsTutorial1Component,
+    DocsTutorial2Component
   ],
   imports: [
     BrowserModule,

@@ -27,6 +27,14 @@ ul{
     /*background: #C0C0C0;*/
     list-style-type: none;
 }
+
+ul li > a >span:hover{
+    cursor: pointer;
+}
+
+/*#btn-1 > span:hover{
+    cursor: pointer;
+}*/
 /*ul li{
     padding: 10px;
 }*/

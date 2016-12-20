@@ -26,7 +26,7 @@
 
 .banner{
     background: rgba(236,239,241,0.24);
-    border-bottom: 1px solid #ECEFF1;
+    /*border-bottom: 1px solid #ECEFF1;*/
     box-sizing: border-box;
     font-size: 18px;
     font-weight: 200;
@@ -34,9 +34,10 @@
     min-height: 97px;
 }
 
-div{
+/*div{
     padding: 70px;
-}
+}*/
+
 a{
     color: black;
     text-decoration: none;
@@ -51,7 +52,7 @@ md-sidenav-layout{
 md-sidenav{
     width: 200px;
     /*padding: 10px;*/
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .my-content {
@@ -68,7 +69,17 @@ ul li > a >span:hover{
     cursor: pointer;
 }
 
+.side-nav-links > li{
+    border-bottom: 2px solid #F5F5F5;
+}
 
+#submenu1 li a{
+    padding-left: 30px;
+}
+
+#submenu2 li a{
+    padding-left: 30px;
+}
 
 /*#btn-1 > span:hover{
     cursor: pointer;

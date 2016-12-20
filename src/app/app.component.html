@@ -1,24 +1,36 @@
 <div>
   <md-toolbar style="background-color:#1976D2;">
-    <span>Brand Name</span>
-    <span >
-      <ul class="nav navbar-nav">
-        <li><a class="md-button" [routerLink]="['docs']">Docs</a></li>
-        <li> <a class="md-button" [routerLink]="['features']">Features</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="md-button" [routerLink]="['']">Get Started</a>
-        </li>
-      </ul>
-    </span>
-
-    <!--<span class="example-fill-remaining-space">
+    <!-- <span>Brand Name</span>
+    
+    <span class="example-fill-remaining-space">
       <a class="md-button" [routerLink]="['docs']">Docs</a>
       <a class="md-button" [routerLink]="['features']">Features</a>
-    </span>-->
+    </span>
 
-    <!--<span><a class="md-button" [routerLink]="['']">Getting Started</a></span>-->
+    <span><a class="md-button" [routerLink]="['']">Get Started</a></span> -->
+
+    <span><a [routerLink]="['']" class="md-button">Brand Name</a></span>
+
+    <ul class="nav navbar-nav example-fill-remaining-space">
+      <li><a class="md-button" [routerLink]="['docs']">Docs</a></li>
+      <li><a class="md-button" [routerLink]="['features']">Features</a></li>
+    </ul>
+
+    <span><a class="md-button" [routerLink]="['']">Get Started</a></span>
+
+    <!--<a href="#" class="navbar-brand">Angular</a>
+
+    <ul class="nav navbar-nav">
+      <li><a class="md-button" [routerLink]="['docs']">Docs</a></li>
+      <li> <a class="md-button" [routerLink]="['features']">Features</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li>
+        <a class="md-button" [routerLink]="['']">Get Started</a>
+      </li>
+    </ul>-->
+
+
   </md-toolbar>
   <div class="content">
     <router-outlet></router-outlet>

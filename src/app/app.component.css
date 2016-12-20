@@ -21,6 +21,26 @@ md-toolbar span > a{
     font-size: 16px;
 }
 
-md-toolbar span > a:hover span{
+md-toolbar span > a:hover,md-toolbar span > a:focus{
+  /*background-color: #1E88E5;*/
+  color: #F0F0F0;
+}
+
+md-toolbar ul li a{
+  /*padding: 0 16px;*/
+  /*line-height: 0;*/
+    text-transform: uppercase;
+    font-family: "Roboto",Helvetica Neue Light,"Helvetica Neue","Helvetica,Arial","Lucida Grande",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul.example-fill-remaining-space li a:hover{
   background-color: #1E88E5;
+  color: #F0F0F0;
+}
+
+ul.example-fill-remaining-space li a:focus{
+  background-color: #1E88E5;
+  color: #F0F0F0;
 }

@@ -2,7 +2,7 @@
   /*// This fills the remaining space, by using flexbox. */
   /*// Every toolbar row uses a flexbox row layout.*/
   flex: 1 1 auto;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .example-fill-remaining-space > a{
@@ -11,4 +11,16 @@
 
 a:hover{
     text-decoration: none;
+}
+
+md-toolbar span > a{
+    padding: 0 16px;
+    text-transform: uppercase;
+    font-family: "Roboto",Helvetica Neue Light,"Helvetica Neue","Helvetica,Arial","Lucida Grande",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+md-toolbar span > a:hover span{
+  background-color: #1E88E5;
 }

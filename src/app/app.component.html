@@ -1,13 +1,24 @@
 <div>
-  <md-toolbar color="primary">
+  <md-toolbar style="background-color:#1976D2;">
     <span>Brand Name</span>
-
-    <span class="example-fill-remaining-space">
-      <a class="md-button" [routerLink]="['docs']">Docs</a>
-      <a class="md-button" [routerLink]="['features']">Features</a>
+    <span >
+      <ul class="nav navbar-nav">
+        <li><a class="md-button" [routerLink]="['docs']">Docs</a></li>
+        <li> <a class="md-button" [routerLink]="['features']">Features</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="md-button" [routerLink]="['']">Get Started</a>
+        </li>
+      </ul>
     </span>
 
-    <span><a class="md-button" [routerLink]="['']">Getting Started</a></span>
+    <!--<span class="example-fill-remaining-space">
+      <a class="md-button" [routerLink]="['docs']">Docs</a>
+      <a class="md-button" [routerLink]="['features']">Features</a>
+    </span>-->
+
+    <!--<span><a class="md-button" [routerLink]="['']">Getting Started</a></span>-->
   </md-toolbar>
   <div class="content">
     <router-outlet></router-outlet>

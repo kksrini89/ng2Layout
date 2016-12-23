@@ -1,25 +1,10 @@
-<!--<nav class="main-nav l-pinned-top l-layer-5">
-  <h1>
-    <a [routerLink]="['']" md-button>ChiragB</a>
-  </h1>
-  <button md-button="md-button" class="main-nav-button main-nav-mobile-trigger l-right">Site Menu	</button>
-  <ul>
-    <li class="l-left"><a class="main-nav-button" [routerLink]="['features']" md-raised-button>Features</a></li>
-    <li class="l-left"><a class="main-nav-button" [routerLink]="['docs']" >Docs</a></li>
-    <li class="l-right"><a class="main-nav-button" [routerLink]="['']" >Get Started</a></li>
-  </ul>
-</nav>-->
-
 <nav class="navbar navbar-fixed-top navbarng2">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed siteMenuLink" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+      <button type="button" class="navbar-toggle collapsed siteMenuLink md-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
         aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="siteMenuTitle">SITE MENU<i class="fa fa-caret-down"></i></span>
-            <!--<span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>-->
+            <span class="siteMenuTitle">SITE MENU<i class="fa fa-caret-down"></i></span>            
     </button>
       <a class="navbar-brand brandTitle" [routerLink]="['']">ChiragB</a>
     </div>
@@ -29,7 +14,7 @@
         <li><a [routerLink]="['features']">FEATURES</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a [routerLink]="['']">Get Started</a></li>
+        <li><a [routerLink]="['docs']">Get Started</a></li>
       </ul>
     </div>
   </div>
@@ -39,18 +24,3 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-<!--<div>
-  <md-toolbar style="background-color:#1976D2;">    
-    <button md-button (click)="onBrandClick()">ChiragB</button>
-
-    <ul class="nav navbar-nav example-fill-remaining-space">
-      <li><a class="md-button" [routerLink]="['docs']">Docs</a></li>
-      <li><a class="md-button" [routerLink]="['features']">Features</a></li>
-    </ul>
-    
-    <button md-button (click)="onGetStarted()">Get Started</button>  
-  </md-toolbar>
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
-</div>-->

@@ -7,7 +7,8 @@ import { DocsTutorial1Component } from './../docs-tutorial/docs-tutorial1.compon
 import { DocsTutorial2Component } from './../docs-tutorial/docs-tutorial2.component';
 
 export const Docs_Routes: Routes = [
-    { path: '', component: DocsGuideComponent },
+    { path: '', redirectTo: 'docsGuide', pathMatch: 'full' },
+    { path: 'docsGuide', component: DocsGuideComponent },
     { path: 'docsGuide1', component: DocsGuide1Component },
     { path: 'docsGuide2', component: DocsGuide2Component },
     { path: 'docsTutorial1', component: DocsTutorial1Component },

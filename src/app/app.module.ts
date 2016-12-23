@@ -13,6 +13,7 @@ import { DocsGuide1Component } from './components/docs-guide/docs-guide1.compone
 import { DocsGuide2Component } from './components/docs-guide/docs-guide2.component';
 import { DocsTutorial1Component } from './components/docs-tutorial/docs-tutorial1.component';
 import { DocsTutorial2Component } from './components/docs-tutorial/docs-tutorial2.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DocsTutorial2Component } from './components/docs-tutorial/docs-tutorial
     DocsGuide1Component,
     DocsGuide2Component,
     DocsTutorial1Component,
-    DocsTutorial2Component
+    DocsTutorial2Component,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

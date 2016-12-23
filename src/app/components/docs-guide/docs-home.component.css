@@ -33,6 +33,23 @@
     min-height: 97px;
 }
 
-article.tutorial-content{
+article.docs-content{
     padding: 48px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column nowrap;
+}
+md-card {
+    margin: 0 16px 16px 0;
+    width: 350px;
+}
+
+.md-sidenav-content{
+    overflow: hidden !important;
+}
+
+md-card-actions [md-button],md-card-actions [md-raised-button]{
+    margin: 0 0 5px 0;
 }

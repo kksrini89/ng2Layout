@@ -1,46 +1,135 @@
-.example-fill-remaining-space {
-  /*// This fills the remaining space, by using flexbox. */
-  /*// Every toolbar row uses a flexbox row layout.*/
-  flex: 1 1 auto;
-  margin-left: 60px;
+.main-nav {
+    background: #1976D2;
+    height: 56px;
+    min-height: 56px;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
 }
 
-.example-fill-remaining-space > a{
-  padding: 10px;
+.main-nav h1 {
+    margin: 0 72px 0 0;
+    padding: 0;
+    height: 56px;
+    width: 168px;
+    float: left;
 }
 
-a:hover{
+h1{
+  font-size: 2em;
+}
+
+.l-layer-5 {
+    z-index: 5;
+}
+
+.l-pinned-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-nav .main-nav-button.main-nav-mobile-trigger {
+    display: none;
+    padding: 0 32px 0 8px;
+    font-size: 14px;
+}
+
+.main-nav .main-nav-button, .main-nav .main-nav-button.md-button {
+    line-height: 56px;
+    display: inline-block;
+    color: #fff;
     text-decoration: none;
-}
-
-md-toolbar span > a{
     padding: 0 16px;
     text-transform: uppercase;
-    font-family: "Roboto",Helvetica Neue Light,"Helvetica Neue","Helvetica,Arial","Lucida Grande",sans-serif;
+    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-weight: 400;
     font-size: 16px;
+    border: none;
+    background: none;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.16px;
+    margin: 0;
+    min-width: auto;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 
-md-toolbar span > a:hover,md-toolbar span > a:focus{
-  /*background-color: #1E88E5;*/
-  color: #F0F0F0;
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-md-toolbar ul li a{
-  /*padding: 0 16px;*/
-  /*line-height: 0;*/
+.main-nav ul li {
+    margin: 0;
+}
+
+.l-left{
+  float: left;
+}
+
+.l-right {
+    float: right;
+}
+
+a{
+  color: #1976D2;
+  text-decoration: none;
+}
+
+.navbarng2{
+    background: #1976D2;
+    /*height: 56px;*/
+    /*min-height: 56px;*/
+    padding: 0;
+}
+
+.navbarng2 button.siteMenuLink span.siteMenuTitle{
+    color: white;
+}
+
+.navbarng2 a.brandTitle{
+    color: white;
+}
+
+.navbarng2 ul.navbarLinks{
+    padding-left: 40px;
+}
+
+.navbarng2 ul.navbarLinks li,.navbarng2 ul.navbarLinks +ul li{
+    padding-left: 10px;
+}
+
+.navbarng2 ul.navbarLinks li a{
+    color: white;
+    text-decoration: none;
     text-transform: uppercase;
-    font-family: "Roboto",Helvetica Neue Light,"Helvetica Neue","Helvetica,Arial","Lucida Grande",sans-serif;
+    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-weight: 400;
-    font-size: 16px;
 }
 
-ul.example-fill-remaining-space li a:hover{
-  background-color: #1E88E5;
-  color: #F0F0F0;
+.navbarng2 ul.navbarLinks li a:hover,.navbarng2 ul.navbarLinks li a:focus{
+        background-color: #1E88E5;
 }
 
-ul.example-fill-remaining-space li a:focus{
-  background-color: #1E88E5;
-  color: #F0F0F0;
+.navbarng2 ul.navbarLinks +ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 400;
+}
+
+.navbarng2 ul.navbarLinks +ul li a:hover,.navbarng2 ul.navbarLinks +ul li a:focus{
+    background-color: #1E88E5;
+}
+
+div.navbarng2ContainerFluid{
+    padding: 0;
+}
+
+.content{
+    padding-top: 50px;
 }

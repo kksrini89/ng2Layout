@@ -50,7 +50,8 @@ md-sidenav-layout{
 }
 
 md-sidenav{
-    width: 200px;
+    width: 225px;
+    background-color: whitesmoke;
     /*padding: 10px;*/
     /*padding: 10px;*/
 }

@@ -33,6 +33,10 @@ a{
     color: white;
 }
 
+.navbarng2 a.brandTitle:hover,.navbarng2 a.brandTitle:focus{
+    background-color: #1E88E5; 
+}
+
 /*.navbarng2 ul.navbarLinks{
     padding-left: 40px;
 }*/

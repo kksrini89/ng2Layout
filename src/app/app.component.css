@@ -37,6 +37,11 @@ a{
     background-color: #1E88E5; 
 }
 
+.navbarng2 a.brandTitle img{
+    margin: -20px;
+    width: 200px;
+}
+
 /*.navbarng2 ul.navbarLinks{
     padding-left: 40px;
 }*/

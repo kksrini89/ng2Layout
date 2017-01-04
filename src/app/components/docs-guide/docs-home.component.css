@@ -53,3 +53,8 @@ md-card {
 md-card-actions [md-button],md-card-actions [md-raised-button]{
     margin: 0 0 5px 0;
 }
+
+.footer-toolbar{
+    background:rgba(236,239,241,0.24);
+    font-size: 14px; 
+}

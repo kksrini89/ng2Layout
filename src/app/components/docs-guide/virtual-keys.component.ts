@@ -1,27 +1,22 @@
-a{
-    color: #1976D2;
-    text-decoration: none;
-}
+import { Component, OnInit } from '@angular/core';
 
-a:hover{
-    text-decoration: underline;
-}
-
-.hero {
+@Component({
+  selector: 'app-virtual-keys',
+  templateUrl: './virtual-keys.component.html',
+  styles: [
+`.hero {
     box-sizing: border-box;
     box-shadow: none;
     padding: 48px 48px 32px 48px;
     position: relative;
     height: 168px;
 }
-
 .background-sky {
     background-color: #1976D2;
     background: -webkit-linear-gradient(305deg,#0D47A1,#42A5F5);
     background: linear-gradient(145deg,#0D47A1,#42A5F5);
     color: #fff;
 }
-
 .hero .hero-title {
     display: inline-block;
     font-size: 28px;
@@ -31,7 +26,6 @@ a:hover{
     margin: 0 8px 0 0;
     text-transform: uppercase;
 }
-
 .banner{
     background: rgba(236,239,241,0.24);
     /*border-bottom: 1px solid #ECEFF1;*/
@@ -41,28 +35,9 @@ a:hover{
     padding: 32px 48px;
     min-height: 97px;
 }
-
 article.docs-content{
     padding: 48px;
 }
-
-.card-container {
-  display: flex;
-  flex-direction: column nowrap;
-}
-md-card {
-    margin: 0 16px 16px 0;
-    width: 350px;
-}
-
-.md-sidenav-content{
-    overflow: hidden !important;
-}
-
-md-card-actions [md-button],md-card-actions [md-raised-button]{
-    margin: 0 0 5px 0;
-}
-
 .nextTopic-section{
     color: #455A64;
     margin: 0 0 32px 0;
@@ -71,8 +46,24 @@ md-card-actions [md-button],md-card-actions [md-raised-button]{
     border-left: 4px solid #00BCD4;
     /*border-left: 4px solid palevioletred; padding: 5px;background-color: whitesmoke;padding-bottom: 10px;*/
 }
-
 .footer-toolbar{
     background:rgba(236,239,241,0.24);
     font-size: 14px; 
+}a{
+    color: #1976D2;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+`]
+})
+export class VirtualKeysComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }

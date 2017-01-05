@@ -1,3 +1,10 @@
+a{
+    color: #1976D2;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 .hero {
     box-sizing: border-box;
     box-shadow: none;
@@ -31,4 +38,21 @@
     font-weight: 200;
     padding: 32px 48px;
     min-height: 97px;
+    position: relative;
+}
+
+.nextTopic-section{
+    color: #455A64;
+    margin: 0 0 32px 0;
+    padding: 32px;
+    background: rgba(236,239,241,0.24);
+    border-left: 4px solid #00BCD4;
+    /*border-left: 4px solid palevioletred; padding: 5px;background-color: whitesmoke;padding-bottom: 10px;*/
+}
+.footer-toolbar{
+    background:rgba(236,239,241,0.24);
+    font-size: 14px; 
+    position: absolute;    
+    bottom: 0;
+    right: 0
 }

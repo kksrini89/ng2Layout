@@ -46,8 +46,8 @@ a:hover{
     text-decoration: none;
 }
 md-sidenav-layout{
-    /*height: 100vh;*/
-    height: 100%;
+    height: 100vh;
+    /*height: 100%;*/
 }
 
 md-sidenav{

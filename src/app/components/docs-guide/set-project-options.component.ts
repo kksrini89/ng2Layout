@@ -54,7 +54,6 @@ article.docs-content{
     color: #1976D2;
     text-decoration: none;
 }
-
 a:hover{
     text-decoration: underline;
 }

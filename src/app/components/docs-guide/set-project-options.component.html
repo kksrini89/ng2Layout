@@ -5,9 +5,339 @@
   </h1>
 </header>
 <div class="banner">
-  CodeBhagat Introduction
+  Setting Project Options
 </div>
 <article class="docs-content">
+  <p>
+    The project options are set of advance settings that enable you to customize the code generation based on the options selected.
+    For example, you can select a provider from dropdown from Toolbar or in Project Settings dialog box so that CodeBhagat
+    can generate data layer class that uses the specific provider.
+  </p>
+  <p>
+    When you create a new projet, you should review the default settings for various code generation options for the new project.
+  </p>
+  <h3>
+    To set project options,
+  </h3>
+  <p>
+    1. From the <b>Tools</b> menu, select <b>Options</b>.<br /> 2. This will open the following Project Options dialog box.
+  </p>
+  <img alt="Project Options" src="/assets/ProjectSettingsGeneral.PNG" /><br />
+  <br />
+  <br />
+  <h2>General Options</h2>
+  <br /> By default, the system will open General tab when you open Project Options dialog box as shown above. Following
+  are the options you can set on this tab.<br />
+  <br />
+  <table class="table table-bordered table-condensed table-striped">
+    <tr>
+      <td>
+        <b>On Startup</b>
+      </td>
+      <td>
+        <b>Open Project Option:</b> When you open the CodeBhagat tool, you may choose to open one of following project.<br
+        />
+        <ol>
+          <li>Open Last Selected Project, which opens up the same project you worked last time.</li>
+          <li>Show CodeBhagat Project, which opens up default project created as a sample.</li>
+          <li>Show Open Project dialog box, which opens up Open Project dialog box so that you can select the specific project
+            to work on.</li>
+        </ol>
+        <b>Check for Updates:</b> This will check for updates whenever you start CodeBhagat for .NET tool. If an update is
+        available, it will prompt you to apply or not.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Code Editor</b>
+      </td>
+      <td>
+        You have an option to either use Code Editor provided by CodeBhagat or use the custom Code Editor. You can click on &quot;Browse&quot;
+        button to select the path for your favorite code editor.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Default Language</b>
+      </td>
+      <td>
+        You can select the language in which you want to generate the code. The two supported languages are C# and VB.NET. The default
+        language is <b>C#</b>.<br/> You can also change this option from the toolbar.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Templates Path</b>
+      </td>
+      <td>
+        This is the path where you can store the specific project templates to generate your code. Each project can have their own
+        path for templates.<br />
+        <b>Note</b>:
+        <ol>
+          <li>If you change the templates path, you will need to manually copy all the tempaltes from the default path to the
+            new path.</li>
+          <li>Although you can select different path for a specific project, you cannot change the names of the template files.</li>
+          <li>You can keep separate templates for a particular project, which allows you flexibility of changing templates and
+            keeping original templates as is.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Copy to Clipboard after Generate?</b>
+      </td>
+      <td>
+        When you select <b>Yes</b>, CodeBhagat will copy the generated source code file to Clipboard automatically. You don't
+        have to go to the folder where the file is and manually copy the file. You can paste the generated source code file
+        into your Visual Studio projects as soon as it generates an individual component.<br />
+      </td>
+    </tr>
+  </table>
+  <br />
+  <h2>Web UI Options</h2>
+  <br /> You may click on Web UI tab of the Project Options dialog box to set the options for the user interface layer of
+  your project/application. Following are the options you can set on this tab.<br />
+  <br />
+  <table class="table table-bordered table-condensed table-striped">
+    <tr>
+      <td>
+        <b>Output Directory</b>
+      </td>
+      <td>
+        This is the path where the ASP.NET Pages or Web User control files will be stored for Web User Interface.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Schema Path</b>
+      </td>
+      <td>
+        This is the path where the schema files will be stored for Web User Interface.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Web UI Namespace</b>
+      </td>
+      <td>
+        The specified namespace will be used in the ASP.NET Pages or Web User control code files for Web User Interface.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Schema Namespace</b>
+      </td>
+      <td>
+        The specified namespace will be used in the schema files for Web User Interface.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Use Master Page</b>
+      </td>
+      <td>
+        If the checkbox is checked, the specified Master Page will be used during the code generation for all ASP.NET Pages.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Web Page Contains</b>
+      </td>
+      <td>
+        When Control is selected, the generated web page will contain the web user control reference.<br /> When Code is
+        selected, the generated web page will contain the code for web page.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Web Control Path</b>
+      </td>
+      <td>
+        The specified path will be used to reference web user controls.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Web Pages Path</b>
+      </td>
+      <td>
+        The specified path will be used to reference web pages.
+      </td>
+    </tr>
+  </table>
+  <br />
+  <img alt="Web UI Settings" src="/assets/ProjectSettingsWebUI.PNG" /><br />
+  <br />
+  <h2>Business Layer Options</h2>
+  <br /> You may click on <b>Business Layer</b> tab of the Project Options dialog box to set the options for the business
+  layer of your project/application. Following are the options you can set on this tab.<br />
+  <br />
+  <table class="table table-bordered table-condensed table-striped">
+    <tr>
+      <td>
+        <b>Class Path</b>
+      </td>
+      <td>
+        This is the path where the class files will be stored for the Business Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Schema Path</b>
+      </td>
+      <td>
+        This is the path where the schema files will be stored for the Business Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Class Namespace</b>
+      </td>
+      <td>
+        The specified namespace will be used in the class files for the Business Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Schema Namespace</b>
+      </td>
+      <td>
+        The specified namespace will be used in the schema files for the Business Layer.
+      </td>
+    </tr>
+  </table>
+  <br />
+  <img alt="Business Layer Options" src="/assets/ProjectSettingsBusiness.PNG" /><br />
+  <br />
+  <h2>Data Access Layer Options</h2>
+  <br /> You may click on <b>Data Access Layer</b> tab of the Project Options dialog box to set the options for the data
+  access layer of your project/application. Following are the options you can set on this tab.<br />
+  <br />
+  <table class="table table-bordered table-condensed table-striped">
+    <tr>
+      <td>
+        <b>Class Path</b>
+      </td>
+      <td>
+        This is the path where the class files will be stored for the Data Access Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Schema Path</b>
+      </td>
+      <td>
+        This is the path where the schema files will be stored for the Data Access Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Class Namespace</b>
+      </td>
+      <td>
+        The specified namespace will be used in the class files for the Data Access Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Schema Namespace</b>
+      </td>
+      <td>
+        The specified namespace will be used in the schema files for the Data Access Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>XSD Tool Path</b>
+      </td>
+      <td>
+        The specified path for xsd.exe will be used to generate the Schema files.
+      </td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <img alt="Data Access Layer Options" src="/assets/ProjectSettingsDAL.PNG" /><br />
+  <br />
+  <h2>Database Layer Options</h2>
+  <br /> You may click on <b>Database</b> tab of the Project Options dialog box to set the options for the database layer
+  of your project/application. Following are the options you can set on this tab.<br />
+  <br />
+  <table class="table table-bordered table-condensed table-striped">
+    <tr>
+      <td>
+        <b>Default Provider</b>
+      </td>
+      <td>
+        One of the following provider can be used from the dropdown list as a default provider.
+        <br />
+        <b>SqlClient</b> to use SqlClient for Database Connection using ADO.NET.<br />
+        <b>OleDb</b> to use OleDb client for Database connection using ADO.NET.<br />
+        <b>EntLib</b> to use Microsoft Enterprise Library for database connection.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Project Prefix</b>
+      </td>
+      <td>
+        The specified prefix will be used for creating a database objects. For example, nw for Northwind.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Tables Prefix</b>
+      </td>
+      <td>
+        The specified prefix will be used for creating a database objects. For example, tbl for Table.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Views Prefix</b>
+      </td>
+      <td>
+        The specified prefix will be used for a database view followed by the projet prefix. For example, nw_view_categories.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Stored Procedure Prefix</b>
+      </td>
+      <td>
+        The specified prefix will be used for a database stored procedure followed by the project prefix. For example, nw_sp_categories_insert
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Triggers Prefix</b>
+      </td>
+      <td>
+        The specified prefix will be used for a database trigger followed by the project prefix. For example, nw_tri_categories_insert
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>SQL Output Path</b>
+      </td>
+      <td>
+        This is the path where the generated SQL files will be stored for the Database Layer.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Audit Trail Table Name</b>
+      </td>
+      <td>
+        The specified table will be used to store audit trail data through the database triggers.
+      </td>
+    </tr>
+  </table>
+  <br />
+  <img alt="Database Layer Options" src="/assets/ProjectSettingsDatabase.PNG" /><br />
+  <br /> Once you have defined the project settings, you can start generating the code straight from the database with the
+  preferences you have set.<br />
+  <br />
   <section class="nextTopic-section">
     <h3>Next Topic</h3>
     <a routerLink="/docs/virtualKeys">Define Virtual Keys/Lookups</a><br />

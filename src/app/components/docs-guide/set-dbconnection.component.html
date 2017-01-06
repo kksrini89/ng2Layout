@@ -5,9 +5,101 @@
   </h1>
 </header>
 <div class="banner">
-  CodeBhagat Introduction
+  Setting Database Connections
 </div>
 <article class="docs-content">
+  <p>
+    Setting up database connection is the first step towards generating the code using CodeBhagat tool. Once you have setup the
+    database connection, you can select a specific database object (Table, View, Stored Procedure or UDF) and generate code
+    for all the layers using just one-click action.
+  </p>
+  <p>
+    You can use CodeBhagat to generate code from SQL Server database (supports SQL Server 2000, 2005 and 2008), SQL Standalone
+    database (.mdf file), Oracle and MS-Access (.mdb and .accdb) databases.
+  </p>
+  <h3>To connect to SQL Server database,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Add</b> and click on
+  <b>SQL Server Database</b> menu item.<br />
+  <br />
+  <img alt="Database Explorer menu" src="/assets/DatabaseExplorerMenu.png" /><br />
+  <br /> 2. The above selection will open the New SQL Connection dialog box as shown below.
+  <br />
+  <br />
+  <img alt="New SQL Server Connection" src="/assets/NewSQLConnection.png" /><br />
+  <br /> 3. You can provide necessary connection information and click <b>OK</b> button to add the connection to the project
+  and Database Explorer window.<br />
+  <br />
+  <br />
+  <h3>To Refresh an existing connection,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Database Connection</b> node and click on Refresh menu item.<br
+  /> &nbsp;&nbsp;&nbsp; This will refresh the selected database connection with latest changes in the Database Explorer window.
+  <br />
+  <br />
+  <br />
+  <h3>To modify an existing connection,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Database Connection</b> node and click on <b>
+			Modify Connection
+		</b> menu item.<br /> &nbsp;&nbsp;&nbsp; This will open an Edit SQL Connection screen (same as New SQL Connection screen)
+  that will allow you to modify the connection properties for the selected database connection.<br />
+  <br />
+  <img alt="Database Connections Menu" src="/assets/DbConnectionMenu.png" /><br />
+  <br />
+  <br />
+  <h3>To delete an existing connection,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Database Connection</b> node and click on <b>
+			Delete
+		</b> menu item.<br /> &nbsp;&nbsp;&nbsp; This will remove the selected database connection from the Database Explorer window.<br
+  />
+  <br />
+  <br />
+  <h3>To Generate a connection string for your web.config file,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Database Connection</b> node and click on Generate Connection
+  String menu item.<br /> &nbsp;&nbsp;&nbsp; This will generate a connection string that can be copied and placed into your
+  web.config file.<br />
+  <br />
+  <br />
+  <h3>To connect to SQL Server Standalone database,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Add</b> and click on <b>
+			SQL Server Standalone Database
+		</b> menu item.<br />
+  <br />
+  <img alt="Database Explorer menu" src="/assets/DatabaseExplorerMenu.png" /><br />
+  <br /> 2. The above selection will open the New SQL Connection dialog box as shown below.
+  <br />
+  <br />
+  <img alt="New SQL Server Mobile Database Connection" src="/assets/NewSQLStandaloneConnection.png" /><br />
+  <br /> 3. You can provide necessary connection information and click <b>OK</b> button to add the connection to the project
+  and Database Explorer window.<br />
+  <br />
+  <br />
+  <h3>To connect to Oracle database,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Add</b> and click on <b>
+			Oracle Database
+		</b> menu item.<br />
+  <br />
+  <img alt="Database Explorer menu" src="/assets/DatabaseExplorerMenu.png" /><br />
+  <br /> 2. The above selection will open the New Oracle Connection dialog box as shown below.
+  <br />
+  <br />
+  <img alt="New Oracle Connection" src="/assets/NewOracleConnection.png" /><br />
+  <br /> 3. You can provide necessary connection information and click <b>OK</b> button to add the connection to the project
+  and Database Explorer window.<br />
+  <br />
+  <br />
+  <h3>To connect to MS-Access database,</h3>
+  <br /> 1. From the <b>Database Explorer</b> menu, select <b>Add</b> and click on <b>
+			MS Access Database
+		</b> menu item.<br />
+  <br />
+  <img alt="Database Explorer menu" src="/assets/DatabaseExplorerMenu.png" /><br />
+  <br /> 2. The above selection will open the New MS Access Connection dialog box as shown below.<br />
+  <br />
+  <img alt="New MS Access Connection" src="/assets/NewAccessConnection.png" /><br />
+  <br /> 3. You can provide necessary connection information and click <b>OK</b> button to add the connection to the project
+  and Database Explorer window.<br />
+  <br />
+  <br />
+
   <section class="nextTopic-section">
     <h3>Next Topic</h3>
     <a routerLink="/docs/setProjectOptions">Setting Project Options</a><br />

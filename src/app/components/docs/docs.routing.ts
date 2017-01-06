@@ -1,3 +1,6 @@
+import { GenerateDatabaseTriggersComponent } from './../docs-tutorial/generate-database-triggers.component';
+import { GenerateStoredProcedureComponent } from './../docs-tutorial/generate-stored-procedure.component';
+import { CodeGenerationComponent } from './../docs-tutorial/code-generation.component';
 import { DataAccessLayerComponent } from './../docs-tutorial/data-access-layer.component';
 import { WcfComponent } from './../docs-tutorial/wcf.component';
 import { WebApiComponent } from './../docs-tutorial/web-api.component';
@@ -44,5 +47,8 @@ export const Docs_Routes: Routes = [
     { path: 'wpfMvvm', component: WpfMvvmComponent },
     { path: 'webApi', component: WebApiComponent },
     { path: 'wcf', component: WcfComponent },
-    { path: 'dataAccess', component: DataAccessLayerComponent }
+    { path: 'dataAccess', component: DataAccessLayerComponent },
+    { path: 'codegenerate', component: CodeGenerationComponent },
+    { path: 'generateStoredProcedure', component: GenerateStoredProcedureComponent },
+    { path: 'generateDatabaseTriggers', component: GenerateDatabaseTriggersComponent }
 ];

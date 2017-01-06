@@ -5,9 +5,41 @@
   </h1>
 </header>
 <div class="banner">
-  CodeBhagat Introduction
+  Database Explorer
 </div>
 <article class="docs-content">
+  <b>Database Explorer</b> panel is just like an Object Explorer, where developers can add/remove a database, browse the
+  database objects and query against its objects. The Database Explorer in CodeBhagat tool, however, is bit advanced that
+  also allows you to generate the code for specific components by selecting a database object and using Context Menu items.
+  <br/><br/>
+  <div class="row">
+    <div class="col-md-4"><img src="/assets/DatabaseExplorer.PNG" class="img-responsive" /></div>
+    <div class="col-md-8">
+      <h4>To add a database,</h4>
+      <ol>
+        <li>Make sure that <b>Database Explorer</b> is open. If it is not, click the View menu and select <b>Database Explorer</b>.</li>
+        <li>Click on <b>Add</b> from the menu and select the type of database you want to add.</li>
+        <li>
+          In the Database Connection dialog box, enter the necessary parameters for database connection based on type of database you
+          are connecting to, and click OK to add the database to the Database Explorer.<br /> Note: You may click
+          on "Test Connection" button to test your database connections before adding to the Database Explorer.
+        </li>
+      </ol>
+      <h4>To delete a database,</h4>
+      <ol>
+        <li>Make sure that <b>Database Explorer</b> is open. If it is not, click the View menu and select <b>Database Explorer</b>.</li>
+        <li>Right Click on the database node you want to delete from the tree view, and select <b>Delete Connection</b> from
+          the context menu OR click on "Delete" menu item.</li>
+      </ol>
+      <h4>To generate code from Database Explorer,</h4>
+      <ol>
+        <li>Right Click on the database object node (i.e. Table, View, Stored Procedure, or UDF), and select <b>Quick Generate</b>          from the context menu.</li>
+        <li>Then, select the type of code you want to generate from the context menu.
+          <img src="/assets/DatabaseExplorerQuickGenerate.PNG" class="img-responsive" />
+        </li>
+      </ol>
+    </div>
+  </div>
   <section class="nextTopic-section">
     <h3>Next Topic</h3>
     <a routerLink="/docs/codetemplateexplorer">Code/Template Explorer</a><br />

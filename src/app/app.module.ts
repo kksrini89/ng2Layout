@@ -29,6 +29,12 @@ import { WpfMvvmComponent } from './components/docs-tutorial/wpf-mvvm.component'
 import { WebApiComponent } from './components/docs-tutorial/web-api.component';
 import { WcfComponent } from './components/docs-tutorial/wcf.component';
 import { DataAccessLayerComponent } from './components/docs-tutorial/data-access-layer.component';
+import { ComparisonComponent } from './components/features/comparison.component';
+import { SystemRequirementsComponent } from './components/features/system-requirements.component';
+import { CodeGenerationComponent } from './components/docs-tutorial/code-generation.component';
+import { GenerateStoredProcedureComponent } from './components/docs-tutorial/generate-stored-procedure.component';
+import { GenerateDatabaseTriggersComponent } from './components/docs-tutorial/generate-database-triggers.component';
+import { ActivateCodeBhagatComponent } from './components/features/activate-code-bhagat.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +61,13 @@ import { DataAccessLayerComponent } from './components/docs-tutorial/data-access
     WpfMvvmComponent,
     WebApiComponent,
     WcfComponent,
-    DataAccessLayerComponent
+    DataAccessLayerComponent,
+    ComparisonComponent,
+    SystemRequirementsComponent,
+    CodeGenerationComponent,
+    GenerateStoredProcedureComponent,
+    GenerateDatabaseTriggersComponent,
+    ActivateCodeBhagatComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,181 @@
+<header class="hero background-sky">
+  <h1 class="hero-title">
+    <img src="/assets/cb_logo.png" style="width:180px;" /><br />
+    <span style="padding-left:18px; font-size:14px;font-weight:bold;color:lightgray;">A Unique, Intelligent and Real Code Generator for .NET!</span>
+  </h1>
+</header>
+<div class="banner">
+  Generate Stored Procedures
+</div>
+<article class="docs-content">
+  <p>
+    You can generate stored procedures by selecting a particular Table or View node from the Database Explorer. This can be done
+    either by selecting Quick Generate or Custom Generate context menu.
+  </p>
+  <p>
+    <span class="style1">Quick Generate</span>:
+  </p>
+  <p>
+    You can generate the stored procedure code with just one-click action. To Quick Generate,
+  </p>
+  <p>
+    1. Go to Database Explorer window and expand the database nodes.<br /> 2. Right click on the database object (Table or
+    View) to open the context menu as shown below.
+  </p>
+  <p style="vertical-align: top;">
+    <img alt="Quick Generate Menu" src="/assets/QGMenu1.png" style="width: 160px; height: 94px; vertical-align: top;" /><img
+      alt="Quick Generate" src="/assets/QuickGenerateMenu.png" style="width: 217px; height: 221px" />
+  </p>
+  <p>
+    3.&nbsp; Select Quick Generate menu and click on Stored Procedures (CRUD) from the sub menu. This will generate the stored
+    procedures for the following operations.
+  </p>
+  <table class="style2">
+    <tr>
+      <td class="style3">
+        SELECT ALL
+      </td>
+      <td>
+        To select and return all records from a table.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        SELECT BY PAGE
+      </td>
+      <td>
+        To select records by page with specified filter criteria.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        SELECT BY FILTER
+      </td>
+      <td>
+        To select records with specified filter criteria.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        SELECT BY ID
+      </td>
+      <td>
+        To select a specific record by id.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        ADD
+      </td>
+      <td>
+        To insert a record into the table.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        UPDATE
+      </td>
+      <td>
+        To update a record into the table.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        DELETE
+      </td>
+      <td>
+        To delete a record from the table.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        DELETE BY FILTER
+      </td>
+      <td>
+        To delete records from the table with specified criteria.
+      </td>
+    </tr>
+  </table>
+  <p>
+    Following naming convetions are used while creating the stored procedures.
+  </p>
+  <p>
+    &lt;ProjectPrefix&gt;_&lt;StoredProcedurePrefix&gt;_&lt;TableName&gt;_&lt;StoredProcedureType&gt;
+  </p>
+  <p>
+    Where,<br /> &lt;ProjectPrefix&gt; is the prefix you defined for project in the Tools, Options menu under Database Layer.
+    For example, nw for Northwind project.<br /> &lt;StoredProcedurePrefix&gt; is the prefix you defined for the stored procedure
+    in the Tools, Options menu under Database Layer.<br /> &lt;TableName&gt; is the table object you selected from the context
+    menu.
+    <br /> &lt;StoredProcedureType&gt; can be Add, Edit, Delete, Select, Select by ID etc.
+  </p>
+  <p>
+    For example, If your table name is Customer, the following stored proedures will be created.
+  </p>
+  <ul>
+    <li>nw_sp_customer_select_all</li>
+    <li>nw_sp_customer_select_bypage</li>
+    <li>nw_sp_customer_select_filter</li>
+    <li>nw_sp_customer_select_byid</li>
+    <li>nw_sp_customer_add</li>
+    <li>nw_sp_customer_edit</li>
+    <li>nw_sp_customer_delete</li>
+    <li>nw_sp_customer_delete_filter</li>
+  </ul>
+  <p>
+    If you want to ignore the ProjecPrefix and StoredProcedurePrefix, you can choose to remove the prefixes from the Tools, Options
+    menu.
+  </p>
+  <p>
+    <span class="style1">Custom Generate</span>:
+  </p>
+  <p>
+    You can choose to custom generate the stored procedure code that will allow you to select the stored procedures that you
+    want to generate and the names you want to give to the stored procedure. To Custom Generate,
+  </p>
+  <p>
+    1. Go to Database Explorer window and expand the database nodes.<br /> 2. Right click on the database object (Table or
+    View) to open the context menu as shown below.
+  </p>
+  <p>
+    You can use Custom Generate menu to select or enter various parameters for your specific needs before you generate the code.
+    To Custom Generate,
+  </p>
+  <p>
+    1. Go to Database Explorer window and expand the database nodes.<br /> 2. Right click on the database object (Table or
+    View) to open the context menu as shown below and select Generate menu.
+  </p>
+  <p style="vertical-align: top;">
+    <img alt="Generate Menu" src="/assets/GenerateMenu.png" style="width: 156px; height: 93px; vertical-align: top;" /><img
+      alt="Generate Sub Menu" src="/assets/GenerateSubMenu.png" style="width: 270px; height: 193px" />
+  </p>
+  3. Click on the Stored Procedures (CRUD) or Stored Procedures (INSERT/UPDATE) to generate specific stored procedures from
+  the sub menu.
+  <p>
+    When you select Stored Procedures (CRUD), this will open the following popup window where you can select specific stored
+    procedures and define the names of the stored procedures before you generate the code.
+  </p>
+  <p>
+    <img alt="Generate Stored Procedures" src="/assets/GenerateSPsWindow.png" style="width: 718px; height: 364px" />
+  </p>
+  <p>
+    When you select Stored Procedures (INSERT/UPDATE), this will open the following popup window where you can select specific
+    parameters to generate INSERT/UPDATE stored procedures code.
+  </p>
+  <p>
+    <img alt="Generate INSERT/UPDATE Stored Procedures" src="/assets/GenerateSPsInsertUpdateWindow.png" style="width: 848px; height: 507px"
+    />
+  </p>
+  <p>
+    &nbsp;
+  </p>
+  <br />
+  <section class="nextTopic-section">
+    <h3>Next Topic</h3>
+    <a [routerLink]="['/docs/generateDatabaseTriggers']">Generate Database Triggers</a><br />
+  </section>
+  <br /><br />
+</article>
+<md-toolbar class="footer-toolbar">
+  <span>&copy; CodeBhagat LLC 2014-2016. All rights reserved.</span>
+</md-toolbar>

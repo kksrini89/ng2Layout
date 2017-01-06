@@ -19,14 +19,21 @@
         <li>
           <a id="btn-2" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Tutorials <span class="pull-right fa fa-caret-down"></span></a>
           <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-1">
-            <li><a [routerLink]="['docsTutorial1']">1. Tutorial 1</a></li>
-            <li><a [routerLink]="['docsTutorial2']">2. Tutorial 2</a></li>
+            <li><a [routerLink]="['generateApp']">Generate Applications</a></li>
+            <li><a [routerLink]="['angular2Spa']">Angular 2.0 SPA Web Application</a></li>
+            <li><a [routerLink]="['angularjs1X']">AngularrJs 1.x SPA Web Application</a></li>
+            <li><a [routerLink]="['aspnetMvc']">ASP.NET MVC Web Application</a></li>
+            <li><a [routerLink]="['aspnetWeb']">ASP.NET Web Application</a></li>
+            <li><a [routerLink]="['wpfMvvm']">WPF MVVM Application</a></li>
+            <li><a [routerLink]="['webApi']">Web API Application</a></li>
+            <li><a [routerLink]="['wcf']">WCF Service Library Component</a></li>
+            <li><a [routerLink]="['dataAccess']">Data Access Layer Component</a></li>
           </ul>
         </li>
       </ul>
     </nav>
   </md-sidenav>
   <div class="my-content">
-    <router-outlet></router-outlet>    
+    <router-outlet></router-outlet>
   </div>
 </md-sidenav-layout>

@@ -1,3 +1,12 @@
+import { DataAccessLayerComponent } from './../docs-tutorial/data-access-layer.component';
+import { WcfComponent } from './../docs-tutorial/wcf.component';
+import { WebApiComponent } from './../docs-tutorial/web-api.component';
+import { WpfMvvmComponent } from './../docs-tutorial/wpf-mvvm.component';
+import { AspnetWebComponent } from './../docs-tutorial/aspnet-web.component';
+import { AspnetMvcComponent } from './../docs-tutorial/aspnet-mvc.component';
+import { Angularjs1XComponent } from './../docs-tutorial/angularjs1-x.component';
+import { Angular2SpaComponent } from './../docs-tutorial/angular2-spa.component';
+import { GenerateAppComponent } from './../docs-tutorial/generate-app.component';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CodeTemplateExplorerComponent } from './../docs-guide/code-template-explorer.component';
@@ -23,7 +32,17 @@ export const Docs_Routes: Routes = [
     { path: 'virtualKeys', component: VirtualKeysComponent },
     { path: 'dbexplorer', component: DbExplorerComponent },
     { path: 'codetemplateexplorer', component: CodeTemplateExplorerComponent },
-    { path: 'docsGuide2', component: DocsGuide2Component },
-    { path: 'docsTutorial1', component: DocsTutorial1Component },
-    { path: 'docsTutorial2', component: DocsTutorial2Component }
+    // { path: 'docsGuide2', component: DocsGuide2Component },
+
+    //{ path: 'docsTutorial1', component: DocsTutorial1Component },
+    //{ path: 'docsTutorial2', component: DocsTutorial2Component }
+    { path: 'generateApp', component: GenerateAppComponent },
+    { path: 'angular2Spa', component: Angular2SpaComponent },
+    { path: 'angularjs1X', component: Angularjs1XComponent },
+    { path: 'aspnetMvc', component: AspnetMvcComponent },
+    { path: 'aspnetWeb', component: AspnetWebComponent },
+    { path: 'wpfMvvm', component: WpfMvvmComponent },
+    { path: 'webApi', component: WebApiComponent },
+    { path: 'wcf', component: WcfComponent },
+    { path: 'dataAccess', component: DataAccessLayerComponent }
 ];

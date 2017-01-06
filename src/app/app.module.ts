@@ -20,6 +20,15 @@ import { SetProjectOptionsComponent } from './components/docs-guide/set-project-
 import { VirtualKeysComponent } from './components/docs-guide/virtual-keys.component';
 import { DbExplorerComponent } from './components/docs-guide/db-explorer.component';
 import { CodeTemplateExplorerComponent } from './components/docs-guide/code-template-explorer.component';
+import { GenerateAppComponent } from './components/docs-tutorial/generate-app.component';
+import { Angularjs1XComponent } from './components/docs-tutorial/angularjs1-x.component';
+import { Angular2SpaComponent } from './components/docs-tutorial/angular2-spa.component';
+import { AspnetMvcComponent } from './components/docs-tutorial/aspnet-mvc.component';
+import { AspnetWebComponent } from './components/docs-tutorial/aspnet-web.component';
+import { WpfMvvmComponent } from './components/docs-tutorial/wpf-mvvm.component';
+import { WebApiComponent } from './components/docs-tutorial/web-api.component';
+import { WcfComponent } from './components/docs-tutorial/wcf.component';
+import { DataAccessLayerComponent } from './components/docs-tutorial/data-access-layer.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +46,16 @@ import { CodeTemplateExplorerComponent } from './components/docs-guide/code-temp
     SetProjectOptionsComponent,
     VirtualKeysComponent,
     DbExplorerComponent,
-    CodeTemplateExplorerComponent
+    CodeTemplateExplorerComponent,
+    GenerateAppComponent,
+    Angularjs1XComponent,
+    Angular2SpaComponent,
+    AspnetMvcComponent,
+    AspnetWebComponent,
+    WpfMvvmComponent,
+    WebApiComponent,
+    WcfComponent,
+    DataAccessLayerComponent
   ],
   imports: [
     BrowserModule,

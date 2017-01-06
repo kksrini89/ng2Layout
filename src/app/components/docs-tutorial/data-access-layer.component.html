@@ -1,0 +1,155 @@
+<header class="hero background-sky">
+  <h1 class="hero-title">
+    <img src="/assets/cb_logo.png" style="width:180px;" /><br />
+    <span style="padding-left:18px; font-size:14px;font-weight:bold;color:lightgray;">A Unique, Intelligent and Real Code Generator for .NET!</span>
+  </h1>
+</header>
+<div class="banner">
+  Generate Data Access Layer
+</div>
+<article class="docs-content">
+  <p>
+    You can generate Data Access Layer class by selecting a particular Table or View node from the Database Explorer. This can
+    be done either by selecting Quick Generate or Custom Generate context menu.
+  </p>
+  <p>
+    <span class="style1">Quick Generate</span>:
+  </p>
+  <p>
+    You can generate the data access layer class code with just one-click action. To Quick Generate,
+  </p>
+  <p>
+    1. Go to Database Explorer window and expand the database nodes.<br /> 2. Right click on the database object (Table or
+    View) to open the context menu as shown below.
+  </p>
+  <p style="vertical-align: top;">
+    <img alt="Quick Generate Menu" src="/assets/QGMenu1.png" style="width: 160px; height: 94px; vertical-align: top;" /><img
+      alt="Quick Generate" src="/assets/QuickGenerateMenu.png" />
+  </p>
+  <p>
+    3.&nbsp; Select Quick Generate menu and click on Data Access Layer class from the sub menu. This will generate the data access
+    layer class with the following operations.
+  </p>
+  <table class="style2">
+    <tr>
+      <td class="style3">
+        GetData()
+      </td>
+      <td>
+        To get all records from a table, returns as DataSet.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        GetData(filterExpression, sortExpression, pageIndex, rowsPerPage)
+      </td>
+      <td>
+        To get records by page with specified filter criteria, returns as DataSet.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        GetData(filterExpression)
+      </td>
+      <td>
+        To get records with specified filter criteria, returns as DataSet.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        GetDetails(ID)
+      </td>
+      <td>
+        To get a specific record by id.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        Add(...)*
+      </td>
+      <td>
+        To add a record into the table with all the table columns as parameters, returns newly added record ID.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        Update(...)*
+      </td>
+      <td>
+        To update a record into the table with all the table columns as parameters, returns true or false.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        Add(object)*
+      </td>
+      <td>
+        To insert a record into the table with DataObject as parameter, returns newly added record ID.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        Update(object)*
+      </td>
+      <td>
+        To update a record into the table with DataObject as parameter, returns true or false.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        Delete(ID)*
+      </td>
+      <td>
+        To delete a record from the table, returns true or false.
+      </td>
+    </tr>
+    <tr>
+      <td class="style3">
+        Delete(filterExpression)*
+      </td>
+      <td>
+        To delete records from the table with specified criteria, returns number of records deleted successfully.
+      </td>
+    </tr>
+  </table>
+  <p>
+    * These methods/operations will not be generated for a data access layer class when the database View is selected.
+  </p>
+  <p>
+    <span class="style1">Custom Generate</span>:
+  </p>
+  <p>
+    You can choose to custom generate the data access layer class code that will allow you to select the methods/operations that
+    you want to generate and the name you want to give to the data access layer class. To Custom Generate,
+  </p>
+  <p>
+    1. Go to Database Explorer window and expand the database nodes.<br /> 2. Right click on the database object (Table or
+    View) to open the context menu as shown below.
+  </p>
+  <p style="vertical-align: top;">
+    <img alt="Generate Menu" src="/assets/GenerateMenu.png" style="width: 156px; height: 93px; vertical-align: top;" /><img
+      alt="Generate Sub Menu" src="/assets/GenerateSubMenu.png" style="width: 270px; height: 193px" />
+  </p>
+  3. Click on the <b>Data Access Layer Class</b> from the sub menu to generate the code with specific methods/operations.
+  <p>
+    When you select Data Access Layer Class, this will open the following popup window where you can select specific methods
+    and enter the name of the class before you generate the code.
+  </p>
+  <p>
+    <img alt="Generate Data Access Layer class" src="/assets/GenerateDAL.png" />
+  </p>
+  <p>
+    <b>Note</b>:<br /> 1) The code can be generated either in C# or VB.NET based on the default language you selected in
+    the Tools, Options.<br /> 2) You can generate the code using SqlClient, OleDbClient or Enterprise Library based on the
+    option you selected in the Tools, Options.
+  </p>
+  <br />
+  <section class="nextTopic-section">
+    <h3>Next Topic</h3>
+    <a href="#">Generate Individual Component</a><br />
+  </section>
+  <br /><br />
+</article>
+<md-toolbar class="footer-toolbar">
+  <span>&copy; CodeBhagat LLC 2014-2016. All rights reserved.</span>
+</md-toolbar>

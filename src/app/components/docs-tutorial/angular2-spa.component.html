@@ -1,0 +1,101 @@
+<header class="hero background-sky">
+  <h1 class="hero-title">
+    <img src="/assets/cb_logo.png" style="width:180px;" /><br />
+    <span style="padding-left:18px; font-size:14px;font-weight:bold;color:lightgray;">A Unique, Intelligent and Real Code Generator for .NET!</span>
+  </h1>
+</header>
+<div class="banner">
+  Generate Angular 2.0 SPA Web Application
+</div>
+<article class="docs-content">
+  <p>
+    With our latest release of CodeBhagat v2.0, you can now generate Angular 2.0 SPA Web Application.<br /><br/> The generated
+    application contains following features:<br />
+    <ul>
+      <li>Excellent development framework for an enterprise application with best practices and application organization for
+        Angular 2.0.</li>
+      <li>Responsive Web UI using Twitter Bootstrap v3.3.7</li>
+      <li>Contains build system using Webpack and test system using Jasmine and Karma.</li>
+      <li>Utilizing Protractor for end-to-end testing and Karma for unit tests.</li>
+      <li>Consistent Error Handling in the generated code for your components and services.</li>
+      <li>Mocked authentication module (will be using ASP.NET Identity in future release).</li>
+      <li>Consistent Error Handling in the generated code for your components and services.</li>
+    </ul>
+    <!--</p>-->
+    <h3>
+      To generate new Angular 2.0 SPA Web Application,
+    </h3>
+    <p>
+      1. From the <b>File</b> menu, select <b>New Application</b> --> <b>Angular 2.0 SPA Web Application</b> menu item.<br/>
+      <br/>
+      <img alt="New Angular 2.0 SPA Web Application" src="/assets/apps/FileNewAppAngular2.png" /><br/>
+      <p>
+        You will see the following dialog box appear on screen:<br/><br/>
+        <img alt="Generate New Angular 2.0 SPA Web Application" src="/assets/apps/GenerateAngular2AppDialog.png" /><br/>
+      </p>
+      <!--</p>-->
+      <p>
+        2. On "Generate New Angular 2.0 SPA Web Application" dialog, Enter/Select the following parameters/options you want to use
+        to generate the application:
+        <ul>
+          <li><b>Application Name</b></li>
+          <li><b>Location</b>: where you want to store the generated application</li>
+          <li><b>Language</b>: C# or VB.NET</li>
+          <li><b>Provider</b>: SQL or Native Client, OleDb Client or Enterprise Library.</li>
+          <li><b>Command Type</b>: Inline SQL or Stored Procedure</li>
+          <li><b>Visual Studio Version</b>: 2015/2013/2012/2010</li>
+        </ul>
+        <!--</p>-->
+        <p>
+          3. You may select the <b>Database</b> (from the dropdown) and <b>Database Objects</b> (from the treeview) for which
+          you want to generate the code, and click on <b>Generate</b> button to generate an application.<br/>
+          <b>Note</b>: This may take between 1 to 3 minutes based on number of Tables/Views you have selected.
+        </p>
+        <p>
+          Once the application is generated, it will be open in your choice of Visual Studio version. All you need to do is <b>Compile</b>          and <b>Run</b> your application.<br/>
+        </p>
+        <p>
+          To Compile, select <b>Build --> Build Solution</b> from the menu item in Visual Studio.<br/> To Run, click on <b>Start</b>          button on Toolbar.<br/>
+        </p>
+        <h1>How to Compile and Run Angular 2.0 Application?</h1>
+        <p>
+          Once generated application is opened up in Visual Studio, you may follow below steps to run both Web API and Angular 2.0
+          application. Since Angular 2.0 application uses Web API as backend services to interact with database, you will
+          need to run Web API application first.<br/><br/> To compile and run Web API application,<br/><br/>
+          <ol>
+            <li>Right click on Web API application in Solution Explorer and select “Set as Startup Project”.</li>
+            <li>Click on “Start” button to compile and run your Web API application.</li>
+          </ol>
+          To compile and run Angular 2.0 application,<br/><br/>
+          <ol>
+            <li>
+              1. Open command prompt and go to application folder. For example, &lt; Project Location &gt; \ &lt; ApplicationName &gt;
+              \ &lt; ApplicationName &gt;
+            </li>
+            <li>2. Run "npm install" command to install node modules and dependencies, before you compile Angular 2.0 application.</li>
+            <li>3. Run "npm start" command, once node modules are installed. This will compile your application.</li>
+            <li>4. Open web browser and go to “localhost:8080” to run your application, if the browser does not open automatically.</li>
+          </ol>
+          <!--</p>-->
+          <h2>Known Issues and Solutions</h2>
+          <p>
+            While you compile and run Angular 2.0 application, you may face certain issues based on various parameters of your environment/setup.<br/><br/>            1) Minimum Requirement:<br/> a. Node.JS version 6.2.2<br/> b. NPM version 3.9.5<br/> 2) Visual Studio Version:
+            either 2013 or 2015 is required with latest updates.<br/>
+            <br/><br/>
+            <b>ISSUE#1</b>: Compile errors with Angular 2.0 application:<br/><br/>
+            <b>Root Cause</b>: Please note that upon opening Angular 2.0 application, Visual Studio may try to install node
+            modules automatically. This may conflict with the command “npm install” on your command prompt.<br/><br/>
+            <b>Solution</b>: To resolve this issue, you will need to delete “node_modules” folder of your Angular 2.0 application
+            and run “npm install” from the command prompt once Visual Studio is done processing.<br/><br/>
+
+          </p>
+          <br />
+          <section class="nextTopic-section">
+            <h3>Next Topic</h3>
+            <a routerLink="/docs/angularjs1X">AngularJS 1.x SPA Web Application</a><br />
+          </section>
+          <br /><br />
+</article>
+<md-toolbar class="footer-toolbar">
+  <span>&copy; CodeBhagat LLC 2014-2016. All rights reserved.</span>
+</md-toolbar>

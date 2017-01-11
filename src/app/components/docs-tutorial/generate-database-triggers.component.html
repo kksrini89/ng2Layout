@@ -8,6 +8,121 @@
   Generate Database Triggers
 </div>
 <article class="docs-content">
+  <p>
+			You can generate database triggers by selecting a particular Table node
+			from the Database Explorer. The database triggers code can log field by field
+			audit trail data into an audit table. This can be done either by selecting Quick Generate
+			or Custom Generate context menu.
+		</p>
+		<p>
+			<span class="style1">Quick Generate</span>:
+		</p>
+		<p>
+			You can generate the database triggers code with just one-click action. To Quick
+			Generate,
+		</p>
+		<p>
+			1. Go to Database Explorer window and expand the database nodes.<br />
+			2. Right click on the database Table node to open the context menu
+			as shown below.
+		</p>
+		<p style="vertical-align: top;">
+			<img alt="Quick Generate Menu" src="/assets/QGMenu1.png"
+				 style="width: 160px; height: 94px; vertical-align: top;" /><img alt="Quick Generate"
+																	 src="/assets/QuickGenerateMenu.png" style="width: 217px; height: 221px" />
+		</p>
+		<p>
+			3.&nbsp; Select Quick Generate menu and click on Triggers from
+			the sub menu. This will generate the database triggers for the following
+			operations.
+		</p>
+		<table class="style2">
+			<tr>
+				<td class="style3">
+					INSERT
+				</td>
+				<td>
+					Insert trigger will log all the fields and their values into an audit log table,
+					when a record is inserted into a selected table.
+				</td>
+			</tr>
+			<tr>
+				<td class="style3">
+					UPDATE
+				</td>
+				<td>
+					Update trigger will log all the fields and their values that are changed into an
+					audit log table, when a record is updated into a selected table.
+				</td>
+			</tr>
+			<tr>
+				<td class="style3">
+					DELETE
+				</td>
+				<td>
+					Delete trigger will log all the fields and their values into audit log table,
+					when a record is deleted from a selected table.
+				</td>
+			</tr>
+		</table>
+		<p>
+			Following naming convetions are used while creating the database triggers.
+		</p>
+		<p>
+			&lt;ProjectPrefix&gt;_&lt;TriggerPrefix&gt;_&lt;TableName&gt;_&lt;TriggerType&gt;
+		</p>
+		<p>
+			Where,<br />
+			&lt;ProjectPrefix&gt; is the prefix you defined for project in the Tools, Options menu
+			under Database Layer. For example, nw for Northwind project.<br />
+			&lt;TriggerPrefix&gt; is the prefix you defined for the database trigger in
+			the Tools, Options menu under Database Layer.<br />
+			&lt;TableName&gt; is the table object you selected from the context menu.<br />
+			&lt;TriggerType&gt; can be Insert, Update or Delete.
+		</p>
+		<p>
+			For example, If your table name is Customer, the following database triggers will
+			be created.
+		</p>
+		<ul>
+			<li>nw_tri_customer_insert</li>
+			<li>nw_tri_customer_update</li>
+			<li>nw_tri_customer_delete</li>
+		</ul>
+		<p>
+			If you want to ignore the ProjecPrefix and TriggerPrefix, you can choose
+			to remove the prefixes from the Tools, Options menu.
+		</p>
+		<p>
+			<span class="style1">Custom Generate</span>:
+		</p>
+		<p>
+			You can choose to custom generate the database triggers code that will allow
+			you to select the trigger that you want to generate and the names you
+			want to give to the trigger. To Custom Generate,
+		</p>
+		<p>
+			1. Go to Database Explorer window and expand the database nodes.<br />
+			2. Right click on the database Table object to open the context menu
+			as shown below.
+		</p>
+		<p style="vertical-align: top;">
+			<img alt="Generate Menu" src="/assets/GenerateMenu.png"
+				 style="width: 156px; height: 93px; vertical-align: top;" /><img alt="Generate Sub Menu" src="/assets/GenerateSubMenu.png"
+																	 style="width: 270px; height: 193px" />
+		</p>
+		3. Click on the Triggers to generate
+		specific triggers from the sub menu.<p>
+			When you select Triggers, this will
+			open the following popup window where you can select specific triggers and define the names of the
+			trigger before you generate the code.
+		</p>
+		<p>
+			<img alt="Generate Database Triggers" src="/assets/GenerateTriggers.png"
+				 style="width: 848px; height: 601px" />
+		</p>
+
+    <br />
   <section class="nextTopic-section">
     <h3>Next Topic</h3>
     <a [routerLink]="['/docs/dataAccess']">Generate Data Access Layer class</a><br />

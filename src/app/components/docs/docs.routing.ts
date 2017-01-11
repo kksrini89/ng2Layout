@@ -1,3 +1,5 @@
+import { Routes, RouterModule } from '@angular/router';
+
 import { GenerateDatabaseTriggersComponent } from './../docs-tutorial/generate-database-triggers.component';
 import { GenerateStoredProcedureComponent } from './../docs-tutorial/generate-stored-procedure.component';
 import { CodeGenerationComponent } from './../docs-tutorial/code-generation.component';
@@ -10,14 +12,13 @@ import { AspnetMvcComponent } from './../docs-tutorial/aspnet-mvc.component';
 import { Angularjs1XComponent } from './../docs-tutorial/angularjs1-x.component';
 import { Angular2SpaComponent } from './../docs-tutorial/angular2-spa.component';
 import { GenerateAppComponent } from './../docs-tutorial/generate-app.component';
-import { Routes, RouterModule } from '@angular/router';
 
-import { CodeTemplateExplorerComponent } from './../docs-guide/code-template-explorer.component';
-import { DbExplorerComponent } from './../docs-guide/db-explorer.component';
-import { VirtualKeysComponent } from './../docs-guide/virtual-keys.component';
-import { SetProjectOptionsComponent } from './../docs-guide/set-project-options.component';
-import { SetDBConnectionComponent } from './../docs-guide/set-dbconnection.component';
 import { CreateNewProjectComponent } from './../docs-guide/create-new-project.component';
+import { SetDBConnectionComponent } from './../docs-guide/set-dbconnection.component';
+import { SetProjectOptionsComponent } from './../docs-guide/set-project-options.component';
+import { VirtualKeysComponent } from './../docs-guide/virtual-keys.component';
+import { DbExplorerComponent } from './../docs-guide/db-explorer.component';
+import { CodeTemplateExplorerComponent } from './../docs-guide/code-template-explorer.component';
 
 import { DocsGuideComponent } from './../docs-guide/docs-home.component';
 import { DocsGuide2Component } from './../docs-guide/docs-guide2.component';
@@ -26,8 +27,8 @@ import { DocsTutorial1Component } from './../docs-tutorial/docs-tutorial1.compon
 import { DocsTutorial2Component } from './../docs-tutorial/docs-tutorial2.component';
 
 export const Docs_Routes: Routes = [
-    { path: '', redirectTo: 'docsGuide', pathMatch: 'full' },
-    { path: 'docsGuide', component: DocsGuideComponent },
+    { path: '', redirectTo: 'intro', pathMatch: 'full' },
+    { path: 'intro', component: DocsGuideComponent },
     // { path: 'docsGuide1', component: DocsGuide1Component },
     { path: 'createNewProject', component: CreateNewProjectComponent },
     { path: 'setDBConnection', component: SetDBConnectionComponent },

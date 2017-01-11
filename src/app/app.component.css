@@ -3,75 +3,20 @@ a{
   text-decoration: none;
 }
 
-.navbarng2{
-    background: #1976D2;    
-    padding: 0;
+a.navbar-brand:hover {
+    color: white;
+    background: rgba(255,255,255,0.2);
+}
+
+.navbar {
+    background-color: #1976D2;
+    color: white;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
+    padding-right: 10px;
 }
 
-.navbarng2 button.siteMenuLink{
-    height: 50px;
-    margin-right: 0px;
-    border-radius: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.navbarng2 button.siteMenuLink:hover,.navbarng2 button.siteMenuLink:focus{
-    background-color: #1E88E5;
-}
-
-.navbarng2 button.siteMenuLink span.siteMenuTitle{
-    color: white;
-}
-
-.navbarng2 button.siteMenuLink span.siteMenuTitle i{
-    margin-left: 5px;
-}
-
-.navbarng2 a.brandTitle{
-    color: white;
-}
-
-.navbarng2 a.brandTitle:hover,.navbarng2 a.brandTitle:focus{
-    background-color: #1E88E5; 
-}
-
-.navbarng2 a.brandTitle img{
-    margin: -20px;
-    width: 200px;
-}
-
-/*.navbarng2 ul.navbarLinks{
-    padding-left: 40px;
-}*/
-
-/*.navbarng2 ul.navbarLinks li,.navbarng2 ul.navbarLinks +ul li{
-    padding-left: 10px;
-}*/
-
-.navbarng2 ul.navbarLinks li a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-    font-weight: 400;
-}
-
-.navbarng2 ul.navbarLinks li a:hover,.navbarng2 ul.navbarLinks li a:focus{
-        background-color: #1E88E5;
-}
-
-.navbarng2 ul.navbarLinks +ul li a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-    font-weight: 400;
-}
-
-.navbarng2 ul.navbarLinks +ul li a:hover,.navbarng2 ul.navbarLinks +ul li a:focus{
-    background-color: #1E88E5;
+.navbar-inverse .navbar-nav>li>a {
+    color: white
 }
 
 div.navbarng2ContainerFluid{

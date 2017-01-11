@@ -27,13 +27,13 @@ a:hover{
     font-size: 28px;
     font-weight: 400;
     float: left;
-    line-height: 48px;
+    line-height: 40px;
     margin: 0 8px 0 0;
     text-transform: uppercase;
 }
 
 .banner{
-    background: rgba(236,239,241,0.24);
+    background: gray;
     /*border-bottom: 1px solid #ECEFF1;*/
     box-sizing: border-box;
     font-size: 18px;
@@ -43,7 +43,7 @@ a:hover{
 }
 
 article.docs-content{
-    padding: 48px;
+    padding: 15px;
 }
 
 .card-container {

@@ -1,12 +1,91 @@
+    <div id="wrapper" style="width:100%">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a [routerLink]="['intro']" class="active" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i> Introduction </a>
+                </li>
+                <li>
+                  <a data-toggle="collapse" href="#getstarted"><i class="glyphicon glyphicon-list"></i> Getting Started <span class="glyphicon glyphicon-collapse-down"></span></a>
+                  <ul class="panel-collapse collapse" id="getstarted" role="menu" aria-labelledby="btn-1">
+                    <li><a [routerLink]="['createNewProject']">Creating New Project</a></li>
+                    <li><a [routerLink]="['setDBConnection']">Setting Database Connection</a></li>
+                    <li><a [routerLink]="['setProjectOptions']">Setting Project Options</a></li>
+                    <li><a [routerLink]="['virtualKeys']">Define Virtual Keys/Lookups</a></li>
+                    <li><a [routerLink]="['dbexplorer']">Database Explorer</a></li>
+                    <li><a [routerLink]="['codetemplateexplorer']">Code/Template Explorer</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a data-toggle="collapse" href="#genapp"><i class="glyphicon glyphicon-cog"></i> Generate Applications<span class="glyphicon glyphicon-collapse-down"></span></a>
+                  <ul class="panel-collapse collapse" id="genapp" role="menu">
+                    <li><a [routerLink]="['generateApp']">Generate Applications</a></li>
+                    <li><a [routerLink]="['angular2Spa']">Angular 2.0 SPA Web App</a></li>
+                    <li><a [routerLink]="['angularjs1X']">AngularrJs 1.x SPA Web App</a></li>
+                    <li><a [routerLink]="['aspnetMvc']">ASP.NET MVC Web Application</a></li>
+                    <li><a [routerLink]="['aspnetWeb']">ASP.NET Web Application</a></li>
+                    <li><a [routerLink]="['wpfMvvm']">WPF MVVM Application</a></li>
+                    <li><a [routerLink]="['webApi']">Web API Application</a></li>
+                    <li><a [routerLink]="['wcf']">WCF Service Library</a></li>
+                    <li><a [routerLink]="['dataAccess']">Data Access Layer Component</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="glyphicon glyphicon-cog"></i> Generate Individual Component</a></li>
+                <li>
+                    <a routerLink="/docs" routerLinkActive="active"><i class="glyphicon glyphicon-search"></i> Generate Lookups</a>
+                </li>
+                <li>
+                    <a routerLink="/graphs" routerLinkActive="active"><i class="glyphicon glyphicon-globe"></i> Sample Applications </a>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="collapse" href="#helpMenu" id="help"><i class="glyphicon glyphicon-question-sign"></i> How To: <span class="glyphicon glyphicon-collapse-down"></span></a>
+                    <ul class="panel-collapse collapse" id="helpMenu">
+                        <li><a routerLink="/about" routerLinkActive="active" >About</a></li>
+                        <li><a routerLink="/contact" routerLinkActive="active" >Contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a routerLink="/calendar" routerLinkActive="active"><i class="glyphicon glyphicon-refresh"></i> Check for Updates </a>
+                </li>
+                <li>
+                    <a routerLink="/settings" routerLinkActive="active"><i class="glyphicon glyphicon-wrench"></i> Troubleshooting </a>
+                </li>
+                <li>
+                    <a routerLink="/settings" routerLinkActive="active"><i class="glyphicon glyphicon-cog"></i> Version History </a>
+                </li>
+                <li>
+                    <a routerLink="/settings" routerLinkActive="active"><i class="glyphicon glyphicon-road"></i> Roadmap </a>
+                </li>
+                <li>
+                    <a routerLink="/settings" routerLinkActive="active"><i class="glyphicon glyphicon-info-sign"></i> About Us </a>
+                </li>
+            </ul>
+        </div>
+        
+		<div id="page-content-wrapper" style="padding:0px;">
+            <div>
+                <div class="row">
+                    <div class="col-lg-12">
+                            <router-outlet></router-outlet>
+                        <footer style="position:fixed;height:60px;bottom:0;width: 100%;background-color:whitesmoke;padding:10px;">
+                            <p><span>Copyright &copy; 2016 CodeBhagat LLC. All rights reserved. | NorthwindNg2 - Angular 2.0 Web Application </span> </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+<!--
 <md-sidenav-layout>
   <md-sidenav mode="side" opened="true" class="app-sidenav">
     <nav>
       <ul class="nav side-nav-links">
         <li>
-          <a class="active" [routerLink]="['docsGuide']">Introduction</a>
+          <a class="active" [routerLink]="['intro']">Introduction</a>
         </li>
         <li>
-          <a id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Guides <span class="pull-right fa fa-caret-down"></span></a>
+          <a id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Getting Started<span class="pull-right fa fa-caret-down"></span></a>
           <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
             <li><a [routerLink]="['createNewProject']">Creating New Project</a></li>
             <li><a [routerLink]="['setDBConnection']">Setting Database Connection</a></li>
@@ -17,7 +96,7 @@
           </ul>
         </li>
         <li>
-          <a id="btn-2" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Tutorials <span class="pull-right fa fa-caret-down"></span></a>
+          <a id="btn-2" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">Generate Applications<span class="pull-right fa fa-caret-down"></span></a>
           <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-1">
             <li><a [routerLink]="['generateApp']">Generate Applications</a></li>
             <li><a [routerLink]="['angular2Spa']">Angular 2.0 SPA Web Application</a></li>
@@ -37,3 +116,4 @@
     <router-outlet></router-outlet>
   </div>
 </md-sidenav-layout>
+-->

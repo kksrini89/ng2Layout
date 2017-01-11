@@ -1,26 +1,74 @@
-<nav class="navbar navbar-fixed-top navbarng2">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed siteMenuLink md-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-        aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="siteMenuTitle">SITE MENU<i class="fa fa-caret-down"></i></span>            
-    </button>
-      <a class="navbar-brand brandTitle" [routerLink]="['']"><img src="/assets/cb_logo.png" alt=""></a>
+<div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" routerLink="" routerLinkActive="active" data-toggle="tooltip" title="CodeBhagat Help Documentation" style="padding:5px;width: 200px;"><img src="/assets/cb_logo.png" alt="" style="width: 140px; "></a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" data-toggle="collapse" data-target="#menu-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="menu-toggle">
+            <ul class="nav navbar-nav navbar-left" style="padding-left:100px;">
+                <li class="dropdown">
+                    <a href="" role="button" aria-expanded="false">FEATURES</a>
+                </li>
+            </ul>
+            <!-- If Authenticated, show below -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a [routerLink]="['docs']" role="button" aria-expanded="false">GET STARTED</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-bell"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-question-sign"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a routerLink="about" routerLinkActive="active">About</a></li>
+                        <li><a routerLink="contact" routerLinkActive="active" >Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbarLinks">
-        <li class="active"><a [routerLink]="['docs']">DOCS</a></li>
-        <li><a [routerLink]="['features']">FEATURES</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a [routerLink]="['docs']">Get Started</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="container-fluid navbarng2ContainerFluid">
-  <div class="content">
     <router-outlet></router-outlet>
-  </div>
 </div>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    </script>
+<!--
+<header>
+  <nav>
+    <a [routerLink]="['']">Home</a>
+    <a [routerLink]="['about']">About</a>
+  </nav>
+</header>
+<main>
+  <h1>Hello from {{api.title}}!!!</h1>
+
+  <!-- Images (and assets) are parsed and loaded from within the public directory -->
+  <!--
+  <img src="/img/angular.png">
+
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <a [href]="url">Webpack Angular 2 Starter</a>
+</footer>
+-->

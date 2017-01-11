@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent {
   toolbarColor = '#1976D2';
   // title = 'app works!';
